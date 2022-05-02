@@ -16,6 +16,8 @@ Página da Web para obter dados obtidos na API REST e mostrar na lista.
 API usada: https://randomuser.me/api/
 Visualize o site em: https://user-list-dwrp.netlify.app
 
+<img width="890" alt="image" src="https://user-images.githubusercontent.com/34161002/166256918-202b5153-76a4-4442-902f-0a8e6e6b23eb.png" >
+
 ## Sessions
 - [Features](#features)
 - [Requirements](#requirements)
