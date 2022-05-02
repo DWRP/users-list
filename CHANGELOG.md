@@ -81,3 +81,12 @@ This area is to register changes on make any commit.
   - Fix:
     - Changed README for refact project infos and explanations
     - Changed version to commit
+
+#### **fix error on readme.md:**
+  - Fix:
+    - Changed README for refact project infos and explanations
+
+#### **update changelog:**
+  - Fix:
+    - update this changelog
+    - Changed version to commit
