@@ -77,3 +77,7 @@ This area is to register changes on make any commit.
   - Fix:
     - Changed search function to find words with spacing
     - Changed version to commit
+#### **Update Readme:**
+  - Fix:
+    - Changed README for refact project infos and explanations
+    - Changed version to commit
