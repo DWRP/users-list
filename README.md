@@ -114,9 +114,11 @@ Below is a brief explanation of why I chose and used the technologies mentioned 
     <summary>Netlify</summary>
     <p>At the beginning of this README there is a link to view this project live. And that was made possible with ease thanks to Netlify. netlify is a great tool to host websites for free and as I needed something fast, I decided to go for something I already knew. I really like this tool because it uses CI/CD itself to keep the page live and also monitors any commit/PR changes to be able to test the application even before publishing. Usually I would choose github pages to use with my own domain, but this time I wanted to use the Netlify integration to simulate a code in production.</p>
   </details>
+  <details>
     <summary>GIT</summary>
     <p>There's not much to say about git. Best code versioner, without a doubt.</p>
   </details>
+  <details>
     <summary>Typescript</summary>
     <p>Like any standardized project, choosing typescript to use all available javascript resources and even those not available in the language was the best choice. Both to identify errors and to define the types that needed to be used in the application and also be used by others who would change this code</p>
   </details>
