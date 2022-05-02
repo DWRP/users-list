@@ -65,3 +65,10 @@ This area is to register changes on make any commit.
     - Removeded unused vars and warnings
     - Removeded unused libs
     - Removeded `README.md` created by `create-react-app`
+
+#### **added readme infos:**
+  - Add:
+    - README PT-BR
+  - Fix:
+    - Changed README for add project infos
+    - Changed version to commit
