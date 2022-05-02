@@ -18,6 +18,7 @@ export type RandomUserParams = {
   inc?: string;
   page?: number;
   results?: number;
+  nat?: string;
 };
 
 export type RandomUserDTO = {
@@ -31,17 +32,24 @@ export type RandomUserDTO = {
 };
 
 export const getDtoParams = (
-  useThisParams: UserTypes[] = [],
+  incParams: UserTypes[] = [], 
   page?: number,
-  offset?: number
+  offset?: number,
+  natParams: UserTypes[] = [], 
 ): RandomUserParams => {
-  const reduceParams = useThisParams.reduce(
-    (currentParam, nextParam) => `${currentParam},${nextParam}`,
+  const reduceIncParams = incParams.reduce(
+    (currentParam, nextParam) => currentParam && `${currentParam},${nextParam}`,
+    ""
+  );
+  
+  const reduceNatParams = incParams.reduce(
+    (currentParam, nextParam) => currentParam && `${currentParam},${nextParam}`,
     ""
   );
   return {
-    inc: reduceParams || "",
+    inc: reduceIncParams || "",
     page,
     results: offset,
+    nat: reduceNatParams || ""
   };
 };

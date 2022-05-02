@@ -12,7 +12,7 @@ export const AppLayout = (props: AppLayputProps): JSX.Element => {
   return (
     <LayoutComponet>
       <HeaderComponent />
-      <Grid spacing={1}>
+      <Grid>
         <Component {...rest} />
       </Grid>
     </LayoutComponet>
