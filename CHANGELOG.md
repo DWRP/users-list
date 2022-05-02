@@ -36,15 +36,32 @@ This area is to register changes on make any commit.
     - Changed version to commit
 
 #### **Added header component and fixing somethings:**
+  - Add:
+    - Layout component body
+    - Header component to show anything
+    - Missing packages
   - Fix:
     - Changed this changelog format
     - Changed theme mode
     - Changed GridData configs and React Query config
     - Changed version to commit
-  - Add:
-    - Layout component body
-    - Header component to show anything
-    - Missing packages
   - Del:
     - Removeded unused components
     - Removeded unused environment variables
+
+#### **Added toolbar component to DataGrid:**
+  - Add:
+    - Custom Toolbar to DataGrid component
+    - Custom translate and texts to datagrid columns
+    - Missing API items
+    - Custom search and columns selector to Custom Toolbar
+  - Fix:
+    - Changed `.gitgnore` infos and move to root folder
+    - Changed code with formatter (Prettier)
+    - Change `HomeView` name to `HomeList` (learn more on README)
+    - Changed version to commit
+  - Del:
+    - Removeded darktheme mode on theme
+    - Removeded unused vars and warnings
+    - Removeded unused libs
+    - Removeded `README.md` created by `create-react-app`
