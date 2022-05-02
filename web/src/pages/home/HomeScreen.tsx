@@ -36,7 +36,7 @@ export const HomeScreen = () => {
     ["users", pageState.currentPage, pageState.pageSize],
     () =>
       fetchUsers(pageState.currentPage, pageState.pageSize).then((res) => res),
-    { keepPreviousData: true }
+    { keepPreviousData: true, refetchOnWindowFocus: false }
   );
 
   const defineNewPageSize = (size: number) => {
@@ -46,29 +46,27 @@ export const HomeScreen = () => {
 
   const dataGridColumns: GridColDef[] = [
     {
-      field: "id",
-      headerName: "ID",
-      width: 150,
-    },
-    {
+      headerName:'',
       field: "customPicture",
       renderCell: () => <AccountCircleRounded />,
-      width: 150,
+      flex: 1,
+      maxWidth: 72,
+      align: "center"
     },
     {
       field: "name",
       headerName: "Nome do usuário",
-      width: 150,
+      flex: 1
     },
     {
       field: "gender",
       headerName: "Gênero",
-      width: 150,
+      flex: 1
     },
     {
       field: "email",
       headerName: "Email",
-      width: 150,
+      flex: 1
     },
   ];
 
