@@ -72,3 +72,8 @@ This area is to register changes on make any commit.
   - Fix:
     - Changed README for add project infos
     - Changed version to commit
+
+#### **Fix search user:**
+  - Fix:
+    - Changed search function to find words with spacing
+    - Changed version to commit
