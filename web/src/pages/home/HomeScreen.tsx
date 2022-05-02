@@ -13,8 +13,7 @@ import {
 import { User } from "../../utils/models/entity/User";
 
 export const HomeScreen = () => {
-
-  const [isPending, startTransition] = useTransition()
+  const [isPending, startTransition] = useTransition();
 
   const [dataGridColumns, setDataGridColumns] = useState<GridColDef[]>(
     DATAGRID_USERS_COLUMNS
@@ -23,8 +22,8 @@ export const HomeScreen = () => {
     currentPage: 0,
   });
 
-  const [search, setSearch] = useState<string>('')
-  const [usersOnSearch, setUsersOnSearch] = useState<User[]>()
+  const [search, setSearch] = useState<string>("");
+  const [usersOnSearch, setUsersOnSearch] = useState<User[]>();
 
   const {
     data: users,
@@ -55,14 +54,23 @@ export const HomeScreen = () => {
   };
 
   const searchText = (text: string) => {
-    setSearch(text)
+    setSearch(text);
     startTransition(() => {
-      const usersFiltreded = users?.results.filter(user => JSON.stringify(user).includes(text))
-      if(!isPending && usersFiltreded){
-        setUsersOnSearch(usersFiltreded.map(remapingUserInfos))
+      const usersFiltreded = users?.results.filter((user) => {
+        const splitText = text.split(" ");
+        const hasTextSplited = splitText.filter((subtext) =>
+          JSON.stringify(user).includes(subtext)
+        );
+        if (hasTextSplited.length > 0) {
+          return true;
+        }
+        return false;
+      });
+      if (!isPending && usersFiltreded) {
+        setUsersOnSearch(usersFiltreded.map(remapingUserInfos));
       }
-    })
-  }
+    });
+  };
 
   if (isLoading || isRefetching) {
     <CircularProgress size={50} />;
