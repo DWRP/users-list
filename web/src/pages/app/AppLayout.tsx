@@ -1,3 +1,5 @@
+import { Grid } from "@mui/material";
+import { HeaderComponent } from "../../components/Header/HeaderComponent";
 import { LayoutComponet } from "../../components/Layout/LayoutComponent";
 
 interface AppLayputProps {
@@ -9,7 +11,10 @@ export const AppLayout = (props: AppLayputProps): JSX.Element => {
 
   return (
     <LayoutComponet>
-      <Component {...rest} />
+      <HeaderComponent />
+      <Grid spacing={1}>
+        <Component {...rest} />
+      </Grid>
     </LayoutComponet>
   );
 };
