@@ -16,6 +16,8 @@ Webpage make to get data fetched on REST API and show on list.
 API used: https://randomuser.me/api/
 Preview this page on: https://user-list-dwrp.netlify.app
 
+<img width="890" alt="image" src="https://user-images.githubusercontent.com/34161002/166256918-202b5153-76a4-4442-902f-0a8e6e6b23eb.png" >
+
 ## Sessions
 - [Features](#features)
 - [Requirements](#requirements)
